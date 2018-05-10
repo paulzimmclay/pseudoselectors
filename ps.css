@@ -4,6 +4,12 @@ ul.top li {
   display: inline;
 }
 
+ul.top li:hover {
+  color: green;
+  background-color: blue;
+}
+
+
 /* The three <span> elements should be displayed as block elements with a 1 pixel border and 25 pixel margin on all sides. */
 span.inline {
   display: block;
@@ -37,8 +43,24 @@ article.first-of-type section:nth-of-type(1) {
 }
 
 /* In the article element with the class three, give each section a background color of orange. */
-
+article.three section {
+  background-color: orange;
+}
 
 /* In the article element with the class three, give the first child element, regardless of type, a background color of goldenrod. */
+article.three :first-child {
+  background-color: goldenrod
+}
+
 /* In the article element with the class three, give the last child element, regardless of type, a background color of darkslategray. */
+article.three :last-child {
+  background-color: darkslategray;
+}
+
 /* Give each article element a title of "Article parent element", a dashed gray border, and a background color of royalblue. Also ensure that it spans the entire length of the document. */
+article:before {
+  content: "Article parent element";
+  border: grey dashed 2px;
+  background-color: royalblue;
+  display: block
+}
