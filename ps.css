@@ -9,6 +9,9 @@ ul.top li:hover {
   background-color: blue;
 }
 
+input#name:focus {
+  background-color: red;
+}
 
 /* The three <span> elements should be displayed as block elements with a 1 pixel border and 25 pixel margin on all sides. */
 span.inline {
